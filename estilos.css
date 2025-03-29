@@ -1,0 +1,65 @@
+div{
+    border: rgb(87, 86, 93);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(211, 195, 250);
+}	
+
+#header{
+    margin-bottom: 5px;
+    color: rgb(118, 118, 118);
+    padding: 30px;
+}
+
+#nav {
+    margin-top: 5px;
+}
+
+nav a{
+    padding: 10px;
+    margin-right: 50px;
+    color: rgb(78, 78, 78);
+}
+
+#descripcion {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 15px;
+    color: #6f6f6f;
+}
+
+#titulos {
+    font-size: extra-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: left;
+    margin: 20px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 15px;
+    color: #000000;
+}
+
+#linkmuseos {
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 8px; 
+    background-color: #d9bc94; 
+    color: rgb(255, 255, 255);
+}
