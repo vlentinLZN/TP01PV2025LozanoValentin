@@ -5,50 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <style>
-        div {
-            padding: 10px;
-            margin-bottom: 15px;
-            background-color: rgb(158, 157, 157);
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-
-        form {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(199, 199, 199);
-            font-weight: 200;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/styles.css/estilos.css">
 </head>
 
 <body style="margin: 10px;">
 
-    <div style="margin-bottom: 5px; font-size:50px;">
-       Contacto
+    <div id="header">
+        <h1>Contacto</h1>
     </div>
-    <div style="margin-top:5px ;">
+
+    <div>
         <nav>
-            <a style="margin-right: 100px;" href="index.html">Inicio</a>
+            <ul>
+            <a href="index.html">Inicio</a>
             <a href="museos.html">Museos</a>
-            <a style="margin-left: 100px;" href="contacto.html">Contacto</a>
+            <a href="contacto.html">Contacto</a>
+            </ul>
         </nav>
     </div>
 
-    <form action="lozanotin61@gmail.com" method="post" enctype="text/plain">
-
+   <form>
         <label for="Nombre"> Nombre y Apellido: </label>
         <input type="text" id="Nombre" name="Nombre" required><br><br>
 
         <label for="Correo electronico"> Correo electronico: </label>
         <input type="email" id="Correo electronico" name="Correo electronico" required><br><br>
 
-        <label for="Mensaje"> Mensaje o descripcion:</label>
-        <textarea id="Mensaje" name="Mensaje" rows="4" cols="50" required> </textarea> <br><br>
+        <label for="Mensaje"> Mensaje: </label>
+        <textarea id="Mensaje" name="Mensaje" required> </textarea> 
 
-        <input type="submit" value="enviar">
+        <button type="submit" onclick="envio()"> Enviar</button>
     </form>
 
+    <script>
+        function envio() {
+            event.preventDefault();
+
+            var Nombre = document.getElementById("Nombre").value;
+
+            alert("Tu mensaje fue enviado correctamente " +Nombre+ "!");
+        }
+    </script>
 
 </body>
 </html>
